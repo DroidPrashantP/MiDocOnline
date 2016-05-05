@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include
+        android:id="@+id/toolbar_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_header_file"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_wrapper"
+        android:layout_margin="@dimen/margin_xlarge">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+           >
+            <Button
+                android:id="@+id/btn_emergency_call"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ANSWER EMERGENCY CALL"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:background="@drawable/emergency"
+                />
+
+            <Button
+                android:id="@+id/btn_answercall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="KIDS EMERGENCY"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:layout_below="@+id/btn_emergency_call"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:background="@drawable/btn_custom_bg_blue"
+                />
+            <Button
+                android:id="@+id/btn_history"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ADULT EMERGENCY"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:background="@drawable/btn_custom_bg_blue"
+                android:layout_below="@+id/btn_answercall"
+                />
+            <RelativeLayout
+                android:id="@+id/Btn_receive_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_history"
+                android:layout_marginTop="@dimen/margin_xxlarge">
+                <ImageView
+                    android:id="@+id/img_circle_blue"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:src="@drawable/ellips"/>
+                <ImageView
+                    android:id="@+id/img_call_receive"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/phone_receive"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Btn_receive_call"
+                android:layout_margin="@dimen/margin_xxlarge">
+                <TextView
+                    android:id="@+id/text_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/padding_large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Agree Payment Terms"/>
+                <CheckBox
+                    android:id="@+id/checkbox_Accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/text_agree"
+                    android:layout_alignBaseline="@+id/text_agree"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

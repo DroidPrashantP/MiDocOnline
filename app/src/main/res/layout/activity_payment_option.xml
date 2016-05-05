@@ -1,0 +1,296 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_wrapper"
+        layout="@layout/layout_header_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_wrapper">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_account"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/blue"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="PAYMENT OPTION"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:id="@+id/cardnumber_field"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/text_account"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:background="@drawable/horizontal_blue_trip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/padding_normal"
+                    android:src="@drawable/ic_card" />
+
+                <EditText
+                    android:id="@+id/edt_cardnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Enter Card Number"
+                    android:textColor="@color/white"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/padding_normal"
+                    android:src="@drawable/ic_visa"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TableRow
+                android:id="@+id/date_selection_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/cardnumber_field"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/expMonth"
+                    android:nextFocusForward="@+id/expYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:layout_centerVertical="true"
+                    style="@style/Widget.MyApp.HeaderBar.Spinner"
+                    android:entries="@array/month_array"
+                    android:background="@color/blue"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    />
+               <!-- style="@style/ExpMonth"-->
+
+                <Spinner
+                    android:id="@+id/expYear"
+                    android:nextFocusForward="@+id/cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:layout_centerVertical="true"
+                    android:entries="@array/year_array"
+                    style="@style/Widget.MyApp.HeaderBar.Spinner"
+                    android:background="@color/blue"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"/>
+<!--
+                style="@style/ExpYear"
+-->
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:id="@+id/validitywrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="5dp"
+                    android:background="@drawable/horizontal_blue_trip">
+
+
+                    <EditText
+                        android:id="@+id/edt_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="CVV"
+                        android:maxLength="3"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TextView
+                android:id="@+id/hintText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_large"
+                android:layout_below="@+id/date_selection_wrapper"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/hintText"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/edittext_custom_background_black"
+                android:text="PAY"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/checkboxwrapper"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:layout_marginTop="@dimen/margin_large"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/chk_remember_me"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Remember Me"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/chk_keep_me_signin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Keep me sign in"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkboxwrapper"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:padding="@dimen/padding_small"
+                android:text="MIDOCONLINE store your payment info for quick checkouton this site and others. For security Please enter your mobile number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/mobilenumberwrapper"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/info_text"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/horizontal_blue_trip"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/padding_normal"
+                    android:src="@drawable/ic_mobile" />
+
+                <EditText
+                    android:id="@+id/edt_mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_mobile"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:text="@string/mobile_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Socialloginwrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobilenumberwrapper"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:visibility="gone">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebookLoginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_large"
+                    android:textAllCaps="true"
+                    app:com_facebook_login_text="@string/facebook_login" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_large"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/forward_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_normal"
+            android:src="@drawable/forward_arrow"
+            android:tint="@color/blue" />
+
+        <Button
+            android:id="@+id/btn_pay1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_custom_background_black"
+            android:text="PAY"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/backward_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_normal"
+            android:src="@drawable/backward_arrow"
+            android:tint="@color/blue" />
+    </RelativeLayout>
+
+</RelativeLayout>

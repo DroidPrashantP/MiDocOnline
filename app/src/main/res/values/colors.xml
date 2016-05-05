@@ -1,0 +1,48 @@
+<resources>
+    <!-- App theme -->
+    <color name="primary">#030303</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#030303</color>
+    <color name="accent">#F44336</color>
+    <color name="blue">#1b97f3</color>
+    <color name="blue_dark">#0d8dec</color>
+    <color name="royal_blue">#007aff</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="text">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="window_background">#FFFFFF</color>
+    <color name="list_item_footer">#D7D7D7</color>
+    <color name="navigationBarColor">#0d8dec</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="version_no">#F44336</color>
+    <color name="app_name">#F44336</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="light_grey">#5e5e5e</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="trans">#80000000</color>
+
+
+    //Colors
+    <color name="blue_green">#008080</color>
+    <color name="grey">#606060</color>
+    <color name="gold">#FFD700</color>
+    <color name="spring_bud">#A7FC00</color>
+    <color name="water_bondi_beach">#0095B6</color>
+    <color name="coral">#FF4040</color>
+    <color name="lime">#00FF00</color>
+    <color name="may_green">#4C9141</color>
+    <color name="mauveine">#EF0097</color>
+    <color name="orange">#FFA500</color>
+    <color name="gentianaceae_blue">#2A6478</color>
+    <color name="blue_krayola">#1F75FE</color>
+    <color name="red">#FF0000</color>
+    <color name="white_blue">#00BFFF</color>
+    <color name="pink">#FF7A7A</color>
+    <color name="green">#45D100</color>
+    <color name="white_green">#A9FF80</color>
+    <color name="black_transparent_30">#30000000</color>
+    <color name="black_transparent_50">#50000000</color>
+    <color name="white_transparent_80">#80FFFFFF</color>
+</resources>

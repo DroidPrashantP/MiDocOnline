@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.midoconline.app.ui.activities.MyProfileActivity">
+
+    <include
+        android:id="@+id/toolbar_wrapper"
+        layout="@layout/layout_header_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_wrapper">
+
+        <TextView
+            android:id="@+id/text_account"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/blue"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="HISTORY CHAT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:layout_margin="@dimen/margin_xxlarge"
+            android:padding="@dimen/padding_normal">
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16/02/90"
+                android:textColor="@color/white"
+                android:padding="@dimen/padding_normal"/>
+            <TextView
+                android:id="@+id/textDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Dr. Smith"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="@dimen/padding_normal"/>
+            <TextView
+                android:id="@+id/textDoctorOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Orthopedics"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:padding="@dimen/padding_normal"
+                android:layout_below="@+id/textDoctorName"/>
+
+            <TextView
+                android:id="@+id/textDoctorDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orthopedics lmdfsalg sdkgnkdsng dskn dskgnklds gsadkngksdg asd dsgnsdklngms gkdsng dsglsdanksdag sadkknskan kngksdag ksngnsda k  sdkngksad nsdkngsdkl k"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:padding="@dimen/padding_xlarge"
+                android:layout_below="@+id/textDoctorOccupation"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

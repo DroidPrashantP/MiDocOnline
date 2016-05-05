@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="min_margin">5dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="card_corner_radius">3dp</dimen>
+	<dimen name="toolbar_height">56dp</dimen>
+    <dimen name="app_logo">80dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_xxlarge">22sp</dimen>
+
+    <!-- padding values -->
+    <dimen name="padding_extra_normal">8dp</dimen>
+    <dimen name="padding_normal">5dp</dimen>
+    <dimen name="padding_small">3dp</dimen>
+    <dimen name="padding_large">10dp</dimen>
+    <dimen name="padding_xlarge">15dp</dimen>
+    <dimen name="padding_xxlarge">30dp</dimen>
+
+    <!-- margin values -->
+    <dimen name="margin_very_small">3dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_xlarge">25dp</dimen>
+    <dimen name="margin_xxlarge">30dp</dimen>
+
+
+    <dimen name="progress_bar">35dp</dimen>
+    <dimen name="editTextHeight">35dp</dimen>
+
+</resources>

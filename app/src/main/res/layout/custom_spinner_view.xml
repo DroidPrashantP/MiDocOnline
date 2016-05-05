@@ -1,0 +1,19 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/speciality_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/speciality_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:padding="@dimen/padding_normal"
+        android:text="MEDICAL SPECIALITY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</RelativeLayout>

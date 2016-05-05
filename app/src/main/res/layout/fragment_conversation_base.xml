@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/fragmentOpponents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/headerWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        >
+        <Chronometer
+            android:id="@+id/timerABWithTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_white"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/incUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22sp"
+            android:layout_marginLeft="20sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_white"/>
+
+        <ImageView
+            android:id="@+id/mapIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_normal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_map" />
+
+    </RelativeLayout>
+
+    <com.quickblox.videochat.webrtc.view.QBGLVideoView
+        android:id="@+id/localVideoVidew"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/headerWrapper"
+        android:visibility="invisible"/>
+
+    <com.quickblox.videochat.webrtc.view.QBGLVideoView
+        android:id="@+id/remoteVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/localVideoVidew"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_above="@+id/element_set_video_buttons"
+        android:visibility="invisible"/>
+
+
+
+    <include
+        android:id="@+id/element_set_video_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/element_fragment_video_call"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+<LinearLayout
+    android:id="@+id/noVideoImageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/headerWrapper"
+    android:gravity="right">
+
+    <ImageView
+        android:id="@+id/imgMyCameraOff"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@color/button_material_dark"
+        android:gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:visibility="invisible" />
+</LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/switchCameraToggle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/ic_swtch_camera"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@id/localVideoVidew"
+        android:layout_alignTop="@id/localVideoVidew"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

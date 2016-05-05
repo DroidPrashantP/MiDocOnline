@@ -1,0 +1,73 @@
+<RelativeLayout
+    android:id="@+id/mainContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar_wrapper"
+        layout="@layout/layout_header_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_wrapper">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_normal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_large"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Agreement"
+            android:textColor="@color/black"
+            android:padding="@dimen/padding_normal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_and_cont_text"
+            android:textColor="@color/black"
+            android:padding="@dimen/padding_normal"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <!--<RelativeLayout android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="@dimen/margin_large">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/backward_arrow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/forward_arrow"-->
+                <!--android:padding="@dimen/margin_normal"-->
+                <!--android:tint="@color/blue"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/forward_arrow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/backward_arrow"-->
+                <!--android:padding="@dimen/margin_normal"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:tint="@color/blue"/>-->
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

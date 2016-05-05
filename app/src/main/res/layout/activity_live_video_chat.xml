@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <Button
+            android:id="@+id/btn_videoCalling"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Video Calling"
+            android:padding="@dimen/padding_small"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/btn_custom_bg_blue"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_switch_camera"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toRightOf="@+id/btn_videoCalling"
+            android:src="@drawable/ic_swtch_camera"
+            android:background="@drawable/btn_custom_bg_blue"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_volume"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toRightOf="@+id/img_switch_camera"
+            android:src="@drawable/ic_volume"
+            android:background="@drawable/btn_custom_bg_blue"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+    <com.midoconline.app.ui.activities.view.OpponentSurfaceView
+        android:id="@+id/remoteVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_large"
+        android:layout_below="@+id/localVideoVidew"
+        android:layout_above="@+id/element_set_video_buttons"/>
+
+    <com.midoconline.app.ui.activities.view.OwnSurfaceView
+        android:id="@+id/localVideoVidew"
+        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btnLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<Button-->
+        <!--android:id="@+id/startStopCallBtn"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:text="Call user"-->
+        <!--android:textSize="25dp"-->
+        <!--android:background="@drawable/btn_custom_bg_blue"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <ProgressBar
+        android:id="@+id/opponentImageLoading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/element_set_video_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/element_fragment_video_call"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/noVideoImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/imgMyCameraOff"
+            android:layout_width="115dp"
+            android:layout_height="150dp"
+            android:background="@color/button_material_dark"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:src="@drawable/ic_swtch_camera"/>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/switchCameraToggle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/ic_swtch_camera"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@id/localVideoVidew"
+        android:layout_alignTop="@id/localVideoVidew"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

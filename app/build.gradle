@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.midoconline.app"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled false
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "2g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //solve the apk packing problem of httpmime and httpcore
+    //ref:http://stackoverflow.com/questions/20673888/duplicate-files-copied-android-studio-0-4-0
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile('com.twitter.sdk.android:twitter:1.10.0@aar') {
+        transitive = true;
+    }
+    compile 'com.stripe:stripe-android:+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/quickblox-android-sdk-chat-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-content-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-core-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-videochat-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-videochat-webrtc-2.3.3.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+        // The Fabric Gradle plugin uses an open ended version to react
+        // quickly to Android tooling updates
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+//Put Fabric plugin after Android plugin
+
+repositories {
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+}

@@ -1,0 +1,438 @@
+<resources>
+    <string name="app_name">miDOConline</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">539997896164728</string>
+    <string name="facebook_login">Facebook</string>
+
+    <string name="google_api_key">AIzaSyDQWYY13MMJKe3mIl7AV06OegGEJY76W88</string>
+
+    <!--sign up form text-->
+    <string name="email_text">EMAIL</string>
+    <string name="name_text">NAME</string>
+    <string name="surname_text">SURNAME</string>
+    <string name="password_text">PASSWORD</string>
+    <string name="mobile_text">MOBILE</string>
+    <string name="birthday_text">BIRTHDAY</string>
+    <string name="city_text">CITY</string>
+    <string name="country_text">COUNTRY</string>
+    <string name="male_text">MALE</string>
+    <string name="female_text">FEMALE</string>
+    <string name="specialist_lic_text">SPECIALITY</string>
+    <string name="request_approval_text">REQUEST APPROVAL</string>
+    <string name="sign_in_text">SIGN IN</string>
+    <!--sign up form Error text-->
+    <string name="email_error">Please enter your Email</string>
+    <string name="email_pattern_error">Email is not in proper format. Please type correct email address.</string>
+    <string name="name_error">Your name is missing. Please enter your name.</string>
+    <string name="password_error">Please provide Password</string>
+    <string name="speciality_licence_error">Please provide Speciality Licence</string>
+    <string name="surname_error">Your surname is missing.</string>
+    <string name="mobile_error">Your mobile number is missing. Please enter you mobile number.</string>
+    <string name="mobile_pattern_error">Please enter 10 digit mobile number</string>
+    <string name="city_error">City name is missing.</string>
+    <string name="country_error">Your country name is missing.</string>
+    <string name="gender_error">Please provide Gender</string>
+    <string name="birthday_error">Birthday is missing.</string>
+    <string name="title_activity_sign_in_activiity">SignInActivity</string>
+    <string name="no_internet_connection">You Don\'t have internet connection pleas try again! </string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_ask_for_registration">AskForRegistration</string>
+    <string name="title_activity_answer_emeregency_call_screen">AnswerEmeregencyCallScreen</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_history_chat">HistoryChatActivity</string>
+
+    <array name="month_label_array">
+        <item>SU</item>
+        <item>MO</item>
+        <item>TU</item>
+        <item>WE</item>
+        <item>TH</item>
+        <item>FR</item>
+        <item>ST</item>
+    </array>
+
+    <string name="logout_confirm_msg">Do you really want to logout ?</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">Cancel</string>
+    <string name="title_activity_terms_and_condition">TermsAndConditionActivity</string>
+    <string name="title_activity_payment_option">PaymentOptionActivity</string>
+    <string name="login_by_first_user">Login First User</string>
+    <string name="login_by_second_user">Login Second User</string>
+    <string name="please_wait">Please wait</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="text_Ok">Ok</string>
+    <string name="confirmpassword_text">CONFIRM PASSWORD</string>
+    <string name="confirm_password_error">Please enter password and confirm password same</string>
+    <string name="min_password_error">Please enter password at least 8 characters</string>
+    <string name="open">open</string>
+    <string name="close">closed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+
+    <!-- Stripe strings -->
+    <string name="appName">Stripe Payments Example</string>
+
+    <string name="addPayment">Add Payment Method</string>
+    <string name="paymentMethods">Payment Methods</string>
+
+    <string name="endingIn">Card ending in </string>
+    <string name="progressMessage">Creating Token&#8230;</string>
+    <string name="validationErrors">Validation Errors</string>
+
+    <string name="cardNumber">Card Number</string>
+    <string name="save">Save</string>
+    <string name="cvc">CVC</string>
+
+    <string name="ok">OK</string>
+
+    <string-array name="year_array">
+        <item>Year</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>Month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="height_array">
+        <item>3\'5\"</item>
+        <item>3\'6\"</item>
+        <item>3\'7\"</item>
+        <item>3\'8\"</item>
+        <item>3\'9\"</item>
+        <item>3\'10\"</item>
+        <item>3\'11\"</item>
+        <item>4\'0\"</item>
+        <item>4\'1\"</item>
+        <item>4\'2\"</item>
+        <item>4\'3\"</item>
+        <item>4\'4\"</item>
+        <item>4\'5\"</item>
+        <item>4\'6\"</item>
+        <item>4\'7\"</item>
+        <item>4\'8\"</item>
+        <item>4\'9\"</item>
+        <item>4\'10\"</item>
+        <item>4\'11\"</item>
+        <item>5\'0\"</item>
+        <item>5\'1\"</item>
+        <item>5\'2\"</item>
+        <item>5\'3\"</item>
+        <item>5\'4\"</item>
+        <item>5\'5\"</item>
+        <item>5\'6\"</item>
+        <item>5\'7\"</item>
+        <item>5\'8\"</item>
+        <item>5\'9\"</item>
+        <item>5\'10\"</item>
+        <item>5\'11\"</item>
+        <item>6\'0\"</item>
+        <item>6\'1\"</item>
+        <item>6\'2\"</item>
+        <item>6\'3\"</item>
+        <item>6\'5\"</item>
+        <item>6\'6\"</item>
+        <item>6\'7\"</item>
+        <item>6\'8\"</item>
+        <item>6\'9\"</item>
+        <item>6\'10\"</item>
+
+
+    </string-array>
+
+    <string-array name="bloodGroup_array">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="weight_array">
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>94</item>
+        <item>95</item>
+        <item>96</item>
+        <item>97</item>
+        <item>98</item>
+        <item>99</item>
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+        <item>112</item>
+        <item>113</item>
+        <item>114</item>
+        <item>115</item>
+        <item>116</item>
+        <item>117</item>
+        <item>118</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>123</item>
+        <item>124</item>
+        <item>125</item>
+        <item>126</item>
+        <item>127</item>
+        <item>128</item>
+        <item>129</item>
+        <item>130</item>
+        <item>131</item>
+        <item>132</item>
+        <item>133</item>
+        <item>134</item>
+        <item>135</item>
+        <item>136</item>
+        <item>137</item>
+        <item>138</item>
+        <item>139</item>
+        <item>140</item>
+        <item>141</item>
+        <item>142</item>
+        <item>143</item>
+        <item>144</item>
+        <item>145</item>
+        <item>146</item>
+        <item>147</item>
+        <item>148</item>
+        <item>149</item>
+        <item>150</item>
+    </string-array>
+    <string name="title_activity_payment_signup">PaymentSignupActivity</string>
+    <string name="update_profile">Update</string>
+    <string name="notes_text">NOTES</string>
+    <string name="street_text">STREET</string>
+    <string name="pinecode_text">ZIPCODE</string>
+    <string name="licence_text">Speciality Licence</string>
+    <string name="title_activity_live_video_chat">LiveVideoChatActivity</string>
+    <string name="calling_dialog_title">Incoming Call</string>
+    <string name="calling_dialog_txt">Calling</string>
+
+
+    <string name="welcoming_message">Login as any user on this deviсe and another(s) users on another device</string>
+    <string name="select_user_to_call">Select Users You Want to Call</string>
+    <string name="choose_one_opponent">Choose one opponent</string>
+    <string name="service_launched">Service for listening to calls launched</string>
+    <string name="service_stopped">Service for listening to calls stopped</string>
+
+    <string name="connect">Connect...</string>
+    <string name="checking">Checking...</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="hung_up_processing">Hang up call command are processing ...</string>
+    <string name="rejected">Rejected</string>
+    <string name="noAnswer">No answer</string>
+    <string name="hungUp">Hung up</string>
+    <string name="closed">Closed</string>
+    <string name="time_out">Time Out</string>
+    <string name="failed">Failed</string>
+    <string name="WIFI_DISABLED">Call was stoped because connection was lost</string>
+    <string name="NETWORK_ABSENT">Connection lost</string>
+    <string name="internet_not_connected">Please check your Internet connection</string>
+    <string name="initializing_in_chat">Initializing in chat, please wait...</string>
+    <string name="ok_button">OK</string>
+    <string name="also_on_call">Also On Call</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+    <string name="incoming_audio_call">Incoming Audio Call</string>
+    <string name="btn_video_call">Video Call</string>
+    <string name="wait_until_loading_finish">wait until loading finish</string>
+    <string name="load_opponents">Load Opponents .....</string>
+    <string name="only_peer_to_peer_calls">Only peer to peer call</string>
+    <string name="log_out_dialog_title">Logout</string>
+    <string name="log_out_dialog_message">Are sure you want to logout?</string>
+    <string name="positive_button">Yes</string>
+    <string name="negative_button">No</string>
+    <string name="btn_audio_call">Audio Call</string>
+    <string name="action_log_out">Logout</string>
+    <string name="storage_permission_granted_msg">Storage permission is required for Image upload</string>
+    <string name="storage_permission_not_granted_msg">Storage permission was not granted</string>
+    <string name="storage_permission_required_msg">Storage permission has now been granted</string>
+    <string name="okay_text">Ok</string>
+    <string name="choose_image_text">Choose Image</string>
+    <string name="call_charge_alert_msg">You will be charged 700mxn for the calling. Do you want to continue.</string>
+    <string name="terms_and_cont_text">Acuerdo de Términos y Condiciones
+SI ESTAS EN UNA SITUACION DE EMERGENCIA, ACUDE AL HOSPITAL MAS CERCANO
+CUIDADOSAMENTE LEE LOS TERMINOS Y CONDICIONES DE ESTE ACUERDO ANTES DE DAR CLICK EN ACEPTAR. DAR CLICK EN “ACEPTO” INDICA QUE ESTAS ACEPTANDO ESTOS TERMINOS Y CONDICIONES. SI NO ESTAS DE ACUERDO CON ESTOS TERMINOS Y CONDICIONES SOBRE EL USO DE ESTE SERVICIO, CIERRA ESTA PAGINA Y NO CONTINUES CON EL USO O LA SUSCRIPCION DE LA MISMA. SE ESTABLECE Y SE SOBRE ENTIENDE QUE ACEPTAS ESTOS TERMINOS Y CONDICIONES EN EL MOMENTO EN EL QUE REALIZAS LO SIGUIENTE: 1) ESTAS ACEPTANDO LOS TERMINOS Y CONDICIONES AL MOMENTO DE ESTABLECER DE FORMA IMPRESA, ORAL O ELECTRONICA CUALQUIER CONTACTO ELECTRONICO MARCANDO QUE HAS REVISADO Y ACEPTADO; 2) INTENTAS UTILIZAR O EN CUALQUIER MODO UTILIZAS O TE SUSCRIBES A LOS SERVICIOS DE MIDOCONLINE.COM; 3) PAGAS POR EL SERVICIO DE MIDOCONLINE.COM (PAGUES A TRAVES DE TU CUENTA O A TRAVES DE LA CUENTA DE UN TERCERO); O 4)INICIES CUALQUIER PROGRAMA QUE INDIQUE QUE ESTAS ACEPTANDO LOS TERMINOS Y CONDICIONES.
+Términos de Uso
+Los términos y condiciones de uso de MIDOCONLINE, así como cualquier suscripción o servicio de MIDOCONLINE, automáticamente incluye pero no está limitado a la más reciente actualización de los términos y condiciones de este acuerdo, independientemente de que haya cambiado desde la primera vez que utilizaste los servicios o te suscribiste a MIDOCONLINE. MIDOCONLINE tiene el derecho de cambiar los términos y condiciones de este acuerdo en cualquier momento sin la obligación de dar aviso. Siempre podrás revisar la version más actualizada de los términos y condiciones en www.midoconline.com. Cuidadosamente lee todas las partes de este acuerdo incluyendo ARBITRAJE OBLIGATORIO y ACCION DE ABANDONO.
+Tu entiendes y estás de acuerdo en que (1) estás utilizando o te estarás suscribiendo a MIDOCONLINE para facilitar la entrega de servicios de salud de parte de especialistas que también han estado de acuerdo en proveer sus servicios a traves de MIDOCONLINE (los “proveedores”), y que esos servicios son proveídos ante la discreción y juicio médico de los Proveedores; (2) el servicio MIDOCONLINE pudiera no ser reembolsado por ningun seguro social, institución gubernamental o cualquier programa de salud por lo que estás de acuerdo en no usar MIDOCONLINE con el proposito de obtener un reembolso por cualquiera de las organizaciones antes mencionadas; (3) MIDOCONLINE pudiera no ser reembolsado por ninguna aseguradora, organización del cuidado de la salud, o sistema de nómina de una empresa privada y por lo tanto no buscarás el reembolso de cualquiera de las organizaciones mencionadas por el costo del uso de MIDOCONLINE; (4) tienes al menos 18 años de edad o estás acompañado por algún pariente o responsable que pueda dar consentimiento a tu nombre en el caso de ser menor de 18 años en el momento de la consulta; y (6) si estás buscando servicios medicos a nombre de un niño o menor de 18 años, dependiente o cualquer persona de quien tú eres el responsible en el cuidado de su salud, tu aprobación en los terminos y condiciones de este acuerdo limitarán a cualquier otra persona a estos terminos y condiciones.
+
+AVISO PRIVACIDAD
+Las prácticas y el Aviso de Privacidad de MIDOCONLINE y la forma en la que la información médica podría ser utilizada y resguardada y la forma en la que tú puedes acceder a ella se encuentra en el apartado de Términos de Privacidad. MIDOCONLINE se reserva el derecho de modificar el Aviso de Privacidad bajo discreción bajo ciertas circunstancias y se irá actualizando con el tiempo. El Aviso de Privacidad y las Prácticas y cualesquiera otras políticas de privacidad, se encuentran sujetas a las leyes y políticas de los Estados Unidos Mexicanos. Debido a que MIDOCONLINE se encuentra hospedado, es una aplicación en línea, ocasionalmente pudiera tener la necesidad de notificar a sus usuarios y a la comunidad de los servicios de MIDOCONLINE, sobre avisos importantes con respecto a la operación y servicio de MIDOCONLINE. Si tú te conviertes en un usuario ya sea gratuito o estás pagando por los servicios de MIDOCONLINE, estás de acuerdo en que MIDOCONLINE pudiera dar aviso de que eres un cliente que paga o recibe servicios gratuitos de parte de MIDOCONLINE.
+Si tuvieras alguna duda con respecto a el Aviso de Privacidad, ponte en contacto con MIDOCONLINE. El e-mail de atención a clientes se encuentra disponible en www.midoconline.com
+
+LICENCIA DE USO Y RESTRICCIONES
+MIDOCONLINE te otorga el derecho de utilizar sus servicios de manera no exclusiva, no tranferible a nivel mundial, únicamente para tu propio beneficio, sujeto a los términos y condiciones de este Acuerdo de Uso. Todos los derechos no expresos están reservados para MIDOCONLINE y sus licenciatarios.
+Está prohibido accesar al servicio de MIDOCONLINE si eres un competidor directo. Además, no puedes accesar al servicio para monitorear su disponibilidad, desempeño o funcionalidad, o para cualquier otra comparación o propósitos de competitividad.
+Está prohibida (1)la licencia, sublicencia, vender, revender, arrendar, transferir, asignar, distribuir, o cualquier otra forma commercial para explotar los servicios de MIDOCONLINE; (2) modificar o hacer trabajos derivados o basados en el servicio de MIDOCONLINE; (3) publicar los servicios de MIDOCONLINE; (4) transmitir los servicios de MIDOCONLINE a través de la red, vía telefónica, o electronica; (5) crear vínculos de internet con otros sitios; copiar los servicios de MIDOCONLINE para crear un producto que compita con MIDOCONLINE.
+TUS OBLIGACIONES
+Tu eres responsible de cualquier actividad que ocurra bajo tu cuenta o usuario en los servicios de MIDOCONLINE. Es tu obligación reportar a MIDOCONLINE por cualquier situación en la que alguien hubiera utilizado tu contraseña de manera indebida.
+
+PAGO POR CONSULTAS
+
+Es tu obligación pagar por cualquier orientación que recibas de parte de cualquier miembro del cuerpo medico de MIDOCONLINE, independientemente de la duración de la consulta o si el medico te recetó o no algún medicamento.
+Todas las facturas se realizan en pesos mexicanos. Los datos que tú proporciones para la realización de las facturas son tu responsabilidad y MIDOCONLINE no tiene ninguna obligación de verificar que tus datos sean correctos. En el caso de que MIDOCONLINE se dé cuenta de que tus datos sean incorrectos, puede terminar la relación de forma inmediata y dar de baja tu cuenta.
+
+Si exisitiera un error en tu cuenta, es tu obligación comunicarte lo más pronto posible para hacer la corrección. MIDOCONLINE se reserva el derecho de cobrar por cualquier cambio en la facturación, ya que esto puede implicar ciertos gastos administrativos.
+
+INDEMNIZACION
+
+Tu estás de acuerdo en indemnizar y defender los intereses de MIDOCONLINE, sus filiales, afiliados, compañias hermanas, empleados, proveedores, agentes, vendedores, proveedores y licenciatarios ante cualquier demanda, pérdidas, derechos, abogados o cualquier tipo de gastos que resulte por (1) tu uso o suscripción al servicio de MIDOCONLINE; (2) por la información que des de tu persona o tu salud a través de los servicios de MIDOCONLINE; (3) de cualquier violación que realices acerca de los acuerdos aquí establecidos.
+OBLIGACIONES DE MIDOCONLINE
+MIDOCONLINE y sus proveedores o licenciatarios no tienen ninguna responsabilidad, garantía, con respecto a los tiempos, calidad, veracidad, disponibilidad con respecto a sus servicios o su contenido. MIDOCONLINE  no garantiza que la suscripción de tu parte sea segura, en tiempo, sin interrupciones, libre de errores. MIDOCONLINE no garantiza que el servicio cumpla con tus expectativas. MIDOCONLINE no garantiza que la información sea certera, que la calidad de la orientación cumpla con tus expectativas. MIDOCONLINE no garantiza que la orientación esté libre de errores o defectos ni que sea corregidos. Tú estás de acuerdo en que el uso  MIDOCONLINE se encuentra bajo tu propio riesgo.
+MIDOCONLINE no es proveedor de servicios de salud; simplemente provee un sistema para facilitar la comunicación con los médicos para que otorguen una orientación al o los interesados. MIDOCONLINE verifica que todos los proveedores cumplan con sus estudios, licencias y actualizaciones en el conocimiento de su área de especialidad. MIDOCONLINE específicamente se deslinda de cualquier problema que pueda ocasionar los actos u omisiones de cualquier proveedor o médico con respecto a la orientación que pueda otorgar a los usuarios. MIDOCONLINE tampoco es responsable de las recétas médicas que pueda expedir cualquiera de los proveedores que se encuentran en el servicio de MIDOCONLINE ni de las consecuencias que pueda tener el haber tomado o no tomado la prescripción del medico o proveedor.
+MIDOCONLINE no es un reemplazo de tu médico de cabecera o de confianza. Orientaciones a través de MIDOCONLINE ayudan en los casos más communes de enfermedades, sin embargo muchos casos requieren de una visita personal para completar la orientación.
+MIDOCONLINE no garantiza que un proveedor o médico vaya a dar una recéta médica con respecto a un medicamento en específico.
+
+PROBLEMAS DE CONEXION
+MIDOCONLINE se encuentra sujeto a limitantes, retrasos o cualquier otro problema de conexión por internet y las comunicaciones electrónicas. MIDOCONLINE no es responsible por cualquier retraso en una consulta debido a las telecomunicaciones y por lo tanto no se hace responsable del posible daño que pueda ocasionar esto.
+RESOLUCION DE DISPUTAS, ARBITRAJE OBLIGATORIO Y ACCION DE ABANDONO
+En un caso extraño en el que tu problema no quede resuelto de forma satisfactoria a través de MIDOCONLINE, tú y MIDOCONLINE están de acuerdo en resolver esas diferencias de buena fe. En el caso de que no sea posible resolver de buena fe, ambos estarán sujetos a la legislación y los tribunales de la ciudad de Puebla, México.
+Arbitraje Obligatorio y Acción de Abandono. En lugar de utilizar el sistema judicial, tú y MIDOCONLINE están de acuerdo en manejar cualquier disputa (definido más adelante) bajo un esquema individual, sin abogados. Estás de acuerdo en aceptar los términos y condiciones de este acuerdo. Tú y MIDOCONLINE están de acuerdo en la Acción de Abandono al derecho de demandas o juicios o de participar en cualquier acción legal con respecto a cualquiera de las partes.
+En Arbitraje no hay demandas o juicios. Las disputas son decididas bajo un comité neutral bajo un proceso más informal que una demanda o juicio. El Arbitraje deberá de sujetarse a los términos y condiciones de los acuerdos aquí establecidos.
+Las Disputas incluyen, pero no están limitadas a, cualquier reclamación o controversias entre cualquiera de las partes que puedan surgir del servicio de MIDOCONLINE, incluyen, pero no limitan, los servicios de cobro y prácticas, incluso aún cuando el acceso o la suscripción aMIDOCONLINE ya hubieran terminado.
+Las disputas incluyen reclamos que: (a) tú o alguien autorizado por tí o no autorizado por tí, puedan llevar en contra de MIDOCONLINE, sus subsidiarias, afiliados, empresas hermanas, empleados, prodedores, agentes, vendedores, o licenciatarios; (b) que tú puedas hacer en contra de los Proveedores o (c) que MIDOCONLINE pudiera realizar en tu contra.
+
+AVISO DE DISPUTA Y PERIODO DE SOLUCION DE DISPUTAS
+Antes de iniciar un arbitraje o cualquier tema de reclamo, tú y MIDOCONLINE están de acuerdo en avisar a la contra parte de forma escrita mediante un “Aviso de Disputa”, que debará contener la descripción del problema y los documentos o información que soporten dicho problema. El Aviso de Disputa deberá de ser enviado a las oficinas de MIDOCONLINE en Calzada Zavaleta 1306-A interior 132 colonia Santa Cruz Buenavista en la ciudad de Puebla, Puebla Mexico, o por medio de e-mail que se encuentra en el apartado de contacto en la página www.midoconline.com. MIDOCONLINE asignará a una persona para que pueda ayudarte a resolver la disputa. Tú y MIDOCONLINE están de acuerdo en realizar el intento por resolver la disputa antes de iniciar cualquier acción de arbitraje.
+TERMINOS, PROCESOS Y REGLAS DE ARBITRAJE
+A menos que tú y MIDOCONLINE acuerden otra cosa, el proceso de arbitraje se llevará a cabo a través de una sola persona, neutral y se llevará a cabo en la ciudad de Puebla, Puebla México.
+El proceso de arbitraje medico se llevará a cabo mediante las reglas que tú y MIDOCONLINE establezcan o mediante las reglas que la Comisión Estatal de Arbitraje Médico de Puebla (CESAMED) establezca. Tu y MIDOCONLINE están de acuerdo en que la Secretaría de Salud de la República Mexicana es la que determina si una situación es sujeta de arbitraje o no.
+Tú y MIDOCONLINE están de acuerdo en que cada una de las partes puede presentar alguna reclamación de forma individual, y no como miembro de un grupo o representante de varios afectados. El arbitraje no podrá consolidar a más de una persona en cualquier reclamación.
+Cada uno es responsable de sus propios gastos que deriven de abogados, expertos, testigos, a menos que alguna ley Mexicana permita lo opuesto.
+Como alternativa al arbitraje, cualquier problema se deberá de resolver en los juzgados del Estado de Puebla en México.
+Dependiendo de las leyes federales de la República Mexicana, tu uso y acceso a MIDOCONLINE será gobernado por las leyes del Estado de Puebla. Si cualquiera de las partes hace caso omiso a este acuerdo, no nos reservamos el derecho de realizar ese reclamo.
+
+FIRMA ELECTRONICA
+        Reconozco que he leido y entiendo los términos y condiciones. Estoy de acuerdo en regirme por ellos a mi nombre o de parte de cualquier persona que de parte mía, utilice el servicio de MIDOCONLINE. Entiendo y estoy de acuerdo que si fallo en el cumplimiento de los términos y condiciones de este acuerdo, se me puede prohibir el uso de MIDOCONLINE, y de que deslindaré de cualquier problema a MIDOCONLINE. Certifico que tengo al menos 18 años de edad y de que estoy en libertad de derecho y tengo la habilidad de establecer el presente acuerdo bajo mi nombre o el que haya dado de alta o registrado en MIDOCONLINE. Entiendo que los proveedores o médicos están basando sus actividades de acuerdo a la información que yo facilito para otorgarme orientación médica.</string>
+    <string name="title_activity_doctor_call">DoctorCallActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="accept_terms_text">Accept Terms and Condition</string>
+
+    <string name="camera_permission_required_msg">Camera Permission Required</string>
+    <string name="camera_permission_granted_msg">Camera Permission Granted</string>
+    <string name="camera_permission_not_granted_msg">Camera permission not granted</string>
+    <string name="galary_permission_required_msg">Gallery Permission Required!</string>
+
+
+</resources>
